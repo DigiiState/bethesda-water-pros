@@ -3,34 +3,34 @@ import Layout from '../layouts/Layout.astro';
 
 const phone = "866-891-9778";
 const city = "Bethesda";
-const niche = "Water Damage";
+const niche = "Water Damage Restoration";
 const serviceImage = "https://images.unsplash.com/photo-1544070282-591d487c647b?auto=format&fit=crop&w=1200&q=80";
-const truckImage = "https://sc02.alicdn.com/kf/A4fe71a4344644752848c5328899d28f41.png";
 ---
 
 <Layout 
-	title={`${city.toUpperCase()} MD ${niche.toUpperCase()} | Locally Owned Maryland Water Damage Pros`}
-	phone={phone}
-	city={city}
-	niche={niche}
+	title={{\`\${{{city.toUpperCase()}}} MD \${{{niche.toUpperCase()}}} | Locally Owned Maryland Water Damage Restoration Pros\`}}
+	phone={866-891-9778}
+	city={Bethesda}
+	niche={Water Damage Restoration}
 >
-	<!-- 1. HERO SECTION (Golden Template Standard) -->
-	<section class="relative bg-slate-800 py-32 text-center text-white bg-cover bg-center" style={`background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('${serviceImage}');`}>
+	<!-- 1. HERO SECTION -->
+	<section class="relative bg-slate-800 py-32 text-center text-white bg-cover bg-center" style={{\`background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('\${https://images.unsplash.com/photo-1544070282-591d487c647b?auto=format&fit=crop&w=1200&q=80}');\`}}>
 		<div class="container mx-auto px-6">
-			<h1 class="text-[50px] md:text-[70px] font-black leading-tight mb-4 uppercase tracking-tighter">{niche} {city} MD</h1>
+			<h1 class="text-[50px] md:text-[70px] font-black leading-tight mb-4 uppercase tracking-tighter">{Water Damage Restoration} {Bethesda} MD</h1>
 			<h3 class="text-xl md:text-2xl font-bold mb-10 opacity-90 uppercase tracking-[0.2em]">Locally Owned & Professionally Managed in Maryland</h3>
-			<a href={`tel:${phone.replace(/-/g, '')}`} class="inline-block bg-white text-[#28657c] font-black text-2xl px-12 py-5 border-2 border-white hover:bg-transparent hover:text-white transition-all uppercase tracking-tighter shadow-2xl">
-				CALL NOW {phone}
+			<a href={{\`tel:\${{phone.replace(/-/g, '')}}\` chunks}} class="inline-block bg-white text-[#28657c] font-black text-2xl px-12 py-5 border-2 border-white hover:bg-transparent hover:text-white transition-all uppercase tracking-tighter shadow-2xl">
+				CALL NOW {866-891-9778}
 			</a>
 		</div>
 	</section>
 
-	<!-- 2. TRUST PILLARS & LEAD CAPTURE (70/30 Split) -->
+	<!-- 2. TRUST PILLARS & LEAD CAPTURE -->
 	<section class="py-20 bg-white">
 		<div class="container mx-auto px-6 grid lg:grid-cols-12 gap-16 items-start">
 			<div class="lg:col-span-8">
-				<h2 class="text-4xl font-black text-[#28657c] mb-12 uppercase tracking-tighter">3 REASONS TO TRUST OUR {city.toUpperCase()} {niche.toUpperCase()} TEAM</h2>
+				<h2 class="text-4xl font-black text-[#28657c] mb-12 uppercase tracking-tighter">3 REASONS TO TRUST OUR {{{city.toUpperCase()}}} {{{niche.toUpperCase()}}} TEAM</h2>
 				<div class="space-y-12">
+					
 					<div class="flex gap-8 items-start">
 						<div class="w-20 h-20 flex-shrink-0 bg-[#28657c]/5 rounded-2xl flex items-center justify-center text-4xl shadow-sm">🛡️</div>
 						<div>
@@ -68,20 +68,19 @@ const truckImage = "https://sc02.alicdn.com/kf/A4fe71a4344644752848c5328899d28f4
 					<p id="formStatus" class="text-[11px] text-slate-400 mt-6 text-center uppercase font-black tracking-widest">100% SATISFACTION GUARANTEED</p>
 				</div>
 			</div>
-
-			</div>
 		</div>
 	</section>
 
-	<!-- 3. THE 4-STEP PROCESS (Golden Template Standard) -->
+	<!-- 3. THE 4-STEP PROCESS -->
 	<section class="py-24 bg-slate-50 border-t border-slate-100">
 		<div class="container mx-auto px-6 max-w-5xl">
 			<div class="text-center mb-20">
-				<h2 class="text-5xl font-[900] text-[#28657c] uppercase tracking-tighter mb-4">OUR {city.toUpperCase()} MD {niche.toUpperCase()} PROCESS</h2>
+				<h2 class="text-5xl font-[900] text-[#28657c] uppercase tracking-tighter mb-4">OUR {{{city.toUpperCase()}}} MD {{{niche.toUpperCase()}}} PROCESS</h2>
 				<hr class="w-24 border-b-8 border-[#28657c] mx-auto mt-6" />
 			</div>
 
 			<div class="grid md:grid-cols-4 gap-4">
+				
 				<div class="bg-white p-8 border border-slate-200 shadow-sm relative overflow-hidden group hover:border-[#28657c] transition-all">
 					<div class="text-6xl font-black text-slate-100 absolute -right-2 -top-2 group-hover:text-[#28657c]/10 transition-colors">01</div>
 					<h5 class="font-black text-[#28657c] uppercase mb-4 relative z-10">INSPECTION</h5>
@@ -106,72 +105,15 @@ const truckImage = "https://sc02.alicdn.com/kf/A4fe71a4344644752848c5328899d28f4
 		</div>
 	</section>
 
-	<!-- 4. INDUSTRIAL AUTHORITY TEXT (Abundant Clarity Standard: 1,100+ Words) -->
-	<section class="py-24 bg-white">
+	<!-- 4. AUTHORITY SECTION -->
+	<section class="py-24 bg-white border-t border-slate-100">
 		<div class="container mx-auto px-6 max-w-4xl">
 			<div class="prose prose-slate prose-lg max-w-none">
-				<h2 class="text-4xl font-black text-[#28657c] uppercase tracking-tighter mb-8">Professional Water Damage Restoration Excellence in Bethesda Maryland</h2>
+				<h2 class="text-4xl font-black text-[#28657c] uppercase tracking-tighter mb-8">Professional {Water Damage Restoration} Excellence in {Bethesda} Maryland</h2>
 				<p>
-					When it comes to maintaining your property's infrastructure in Bethesda, Maryland, you cannot afford to take shortcuts. Unlike the big national franchises that use generic call centers, our Water Damage Restoration team is based right here in Bethesda. We understand the specific soil and climate conditions of Maryland, and we know exactly how they affect your property.
+					When it comes to maintaining your property's infrastructure in {Bethesda}, Maryland, you cannot afford to take shortcuts. Unlike the big national franchises that use generic call centers, our {Water Damage Restoration} team is based right here in {Bethesda}. We understand the specific local conditions of Maryland and exactly how they affect your property.
 				</p>
-
-                <h3 class="text-3xl font-black text-[#28657c] uppercase tracking-tighter mb-6">Scientific Drying & Psychrometry in Bethesda</h3>
-				<p>
-					Effective Water Damage Restoration in Bethesda, MD requires a deep understanding of the science of psychrometry. We don't just extract water; we manage the thermodynamics of your indoor environment. By controlling temperature, relative humidity, and airflow, we accelerate the evaporation process even from dense structural materials like subfloors and wall studs.
-				</p>
-                <p>
-                    Maryland's humid climate presents a major challenge for drying operations. High ambient humidity can slow down evaporation, leading to "secondary damage" such as warped wood or mold growth. Our industrial-grade LGR dehumidifiers are designed to operate in these challenging Maryland conditions, pulling gallons of moisture from the air every 24 hours to protect your Bethesda home.
-                </p>
-
-                <h3 class="text-3xl font-black text-[#28657c] uppercase tracking-tighter mb-6">Infrared Thermal Imaging Audits</h3>
-                <p>
-                    The most dangerous water is the water you can't see. In Bethesda, we utilize advanced FLIR thermal imaging cameras to "see" behind drywall and under hardwood flooring. This allows us to identify hidden moisture pockets that would otherwise be missed by standard meters. Our "Abundant Clarity" approach ensures that every drop of moisture is accounted for, preventing long-term structural rot and health hazards.
-                </p>
-
-                <div class="bg-[#28657c]/5 p-12 rounded-3xl my-16 border-l-8 border-[#28657c]">
-                    <h4 class="text-2xl font-black text-[#28657c] uppercase mb-6">Bethesda Water Emergency Protocol</h4>
-                    <ul class="space-y-4 font-bold text-slate-700">
-                        <li>[ ] SOURCE CONTROL: Identify and shut off the main water supply to your Bethesda property.</li>
-                        <li>[ ] HAZARD MITIGATION: Shut off electrical breakers to flooded areas to prevent electrocution.</li>
-                        <li>[ ] ASSET PROTECTION: Move furniture and electronics to unaffected areas or high ground.</li>
-                        <li>[ ] CALL THE ELITE: Immediate professional extraction is the only way to prevent permanent loss.</li>
-                    </ul>
-                </div>
-
-                <h3 class="text-3xl font-black text-[#28657c] uppercase tracking-tighter mb-6">Maryland Mold Prevention Standards</h3>
-                <p>
-                    In Bethesda, mold spores can begin to colonize damp materials in as little as 24 hours. Our restoration process includes the application of EPA-registered antimicrobial agents to sanitize affected areas. We adhere to the strict IICRC S500 standards for professional water damage restoration, ensuring your family's health is prioritized throughout the entire cleanup and drying phase in Maryland.
-                </p>
-
-                <h2 class="text-4xl font-black text-[#28657c] uppercase tracking-tighter mt-24 mb-12">Frequently Asked Questions</h2>
-                <div class="space-y-10">
-                    <div>
-                        <h4 class="text-xl font-black text-slate-900 uppercase mb-2">How long does the drying process take in Bethesda, MD?</h4>
-                        <p class="text-slate-600">A typical drying cycle takes between 3 to 5 days. We perform daily moisture monitoring in your Bethesda property to track progress and adjust equipment as the drying environment stabilizes.</p>
-                    </div>
-                    <div>
-                        <h4 class="text-xl font-black text-slate-900 uppercase mb-2">Will my insurance cover Water Damage Restoration?</h4>
-                        <p class="text-slate-600">Most homeowner policies in Maryland cover sudden and accidental water damage. We work directly with your adjuster and handle the billing process to minimize your out-of-pocket stress in Bethesda.</p>
-                    </div>
-                    <div>
-                        <h4 class="text-xl font-black text-slate-900 uppercase mb-2">Can you save my wet carpets and pads?</h4>
-                        <p class="text-slate-600">In many cases, yes, if the water is from a clean source (Category 1). If the water is contaminated (Category 3/Sewage), industry standards in Maryland require replacement for health reasons.</p>
-                    </div>
-                    <div>
-                        <h4 class="text-xl font-black text-slate-900 uppercase mb-2">What happens if mold is already present?</h4>
-                        <p class="text-slate-600">Our Bethesda team is also trained in mold remediation. We will contain the area and use HEPA filtration to safely remove growth and restore air quality to Maryland standards.</p>
-                    </div>
-                </div>
-    
-
-                <h3 class="text-3xl font-black text-[#28657c] uppercase tracking-tighter mb-6">Maryland Community Stewardship</h3>
-                <p>
-                    As a locally managed service in Bethesda, MD, we are more than just a business; we are part of the Maryland community. We prioritize hiring local technicians who understand the specific challenges of our region, from the humidity of the Chesapeake to the rocky soils of Northern Baltimore County. Our goal is to provide sustainable, reliable infrastructure maintenance that keeps Maryland properties safe and profitable for decades to come.
-                </p>
-                <p>
-                    By choosing our professional services, you are supporting a network dedicated to "Abundant Clarity" in the service industry. We believe that every property owner in Bethesda deserves a transparent, data-driven approach to maintenance. Whether it is protecting your home's foundation or ensuring the safety of your trees, we are here to serve our Maryland neighbors with excellence and integrity.
-                </p>
-    
+                
 			</div>
 		</div>
 	</section>
@@ -192,7 +134,7 @@ const truckImage = "https://sc02.alicdn.com/kf/A4fe71a4344644752848c5328899d28f4
 	const status = document.getElementById('formStatus');
 	const webhookUrl = "https://wandering-king-6c05.empty-math-6c0f.workers.dev";
 
-	form?.addEventListener('submit', async (e) => {
+	form?.addEventListener('submit', async (e) => {{
 		e.preventDefault();
 		const formData = new FormData(form);
 		const data = Object.fromEntries(formData.entries());
@@ -200,22 +142,22 @@ const truckImage = "https://sc02.alicdn.com/kf/A4fe71a4344644752848c5328899d28f4
 		data.source = window.location.hostname;
 		data.timestamp = new Date().toISOString();
 
-		try {
+		try {{
 			status.textContent = "SENDING REQUEST...";
-			const response = await fetch(webhookUrl, {
+			const response = await fetch(webhookUrl, {{
 				method: 'POST',
-				headers: { 'Content-Type': 'application/json' },
+				headers: {{ 'Content-Type': 'application/json' }},
 				body: JSON.stringify(data)
-			});
+			}});
 
-			if (response.ok) {
+			if (response.ok) {{
 				status.textContent = "✅ SUCCESS! WE WILL CALL YOU SHORTLY.";
 				form.reset();
-			} else {
+			}} else {{
 				throw new Error();
-			}
-		} catch (err) {
+			}}
+		}} catch (err) {{
 			status.textContent = "❌ ERROR SENDING. PLEASE CALL US NOW.";
-		}
-	});
+		}}
+	}});
 </script>
